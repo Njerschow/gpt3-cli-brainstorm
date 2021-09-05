@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const { generateIdeas } = require('./src/brainstorm');
 
 require('yargs').usage('./index.js --help')

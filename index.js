@@ -1,7 +1,7 @@
 const { generateIdeas } = require('./src/brainstorm');
 
 require('yargs').usage('./index.js --help')
-    .command('ideas [idea]', 'brainstorm about an idea, example usage: `brainstorm ideas "Brainstorm names for my business, it\'s an API that can send both iMessages and SMS."`', (yargs) => {
+    .command('ideas [idea]', 'brainstorm about an idea, example usage: `bstorm ideas "Brainstorm names for my business, it\'s an API that can send both iMessages and SMS."`', (yargs) => {
         yargs.positional('idea', {
             describe: 'an idea phrased as a command, example: "Brainstorm growth ideas for a business that creates GPT-3 command line tools"`'
         })
